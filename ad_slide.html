@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_1').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_1').hover(function(){
+		$(this).find('#slides_1').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_1').removeClass('active').cycle('pause');
+	});
+	
+});
+
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_2').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_2').hover(function(){
+		$(this).find('#slides_2').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_2').removeClass('active').cycle('pause');
+	});
+	
+});
+
+
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_3').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_3').hover(function(){
+		$(this).find('#slides_3').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_3').removeClass('active').cycle('pause');
+	});
+	
+});
+
+jQuery(function($){
+	// Cycle plugin
+	$('#slides_4').cycle({
+	    fx:     'none',
+	    speed:   1000,
+	    timeout: 10
+	}).cycle("pause");
+	
+	// Pause & play on hover
+	$('#slideshow-block_4').hover(function(){
+		$(this).find('#slides_4').addClass('active').cycle('resume');
+	}, function(){
+		$(this).find('#slides_4').removeClass('active').cycle('pause');
+	});
+	
+});
+
+</script>
+
+<style>
+body {
+	font-family: "Ubuntu", sans-serif;
+	padding:20px 0 0 0;
+	margin:0;
+	}
+ul, li {
+    list-style: none;
+	}
+.container {
+	width:1100px;
+	margin:0 auto; 
+	}
+.clear {
+	float: none;
+	clear:both;
+	}
+.left {
+	float: left;
+	}
+.right {
+	float: right;
+	}
+.artists ul {
+	padding:0;
+	margin:0;
+	}	
+.artists ul li img {
+	width: 100%;
+	}
+.artists h2, .artists h2 a { /*  TITILE H2 */
+	color:#222;
+	text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 1.15em;
+line-height: 1.75;
+margin: 0 0 5px 0;
+	}
+.artists h2.right a { /*  TITILE H2 */
+    color:#222;
+	display:block;
+	padding: 2px 6px;
+font-size: 10px;
+font-weight:100;
+border: #222 1px solid;
+	}
+.artists a {  /*  TITILE H2 */
+	text-decoration:none;
+	color: #222;
+	}
+.artists h4, h5 {   /*  TITILE H4, H5 */
+	color:#222;
+	margin: 0;
+line-height: 1.5;
+	}
+.artists h4 {
+	text-transform: uppercase;
+font-size: 14px;
+	}
+.artists h5 {
+font-size: 14px;
+font-weight:100;
+	}
+.artists {
+	padding-bottom: 50px;
+	}
+.artists ul li {
+	float:left;
+	width: 259px;
+	margin-right: 21px;
+	}	
+.artists ul li.end {
+	margin-right:0;
+	}	
+ .artists h4:hover, h5:hover, span:hover {
+	text-decoration: underline;
+	}
+.artists li { 
+	position: relative;
+	}
+.artists ul .slideshow-block{
+	position: relative;  /*  important!  */
+	width: 259px;
+	height: 180px;
+	overflow: hidden;
+	}
+#slideshow-block_1 {
+	background: url('img/profile_1.jpg');   
+	}
+#slideshow-block_2 {
+	background: url('img/profile_2.jpg');   
+	}
+#slideshow-block_3 {
+	background: url('img/profile_3.jpg');   
+	}
+#slideshow-block_4 {
+	background: url('img/profile_4.jpg');   
+	}
+.artists ul .slides{
+	z-index:0;
+	visibility:hidden;
+	}
+.artists ul .slides.active{
+	visibility:visible;
+	}
+
+</style>
+<title>AD_slider</title>
+</head>
+
+<body>
+<div class="artists">
+<div class="container">
+   <h2 class="left">Artists</h2>
+   <h2 class="right"><a href="#">SHOW ALL</a></h2>
+   <div class="clear"></div>
+   
+   <ul>
+     <li>
+       <div class="slideshow-block" id="slideshow-block_1">  <!----relative! --->
+       <ul class="slides" id="slides_1">
+		<li><img src="http://uploads5.wikiart.org/images/alphonse-mucha/zodiac-1896.jpg"/></li>
+		<li><img src="http://uploads2.wikiart.org/images/alphonse-mucha/job-1896.jpg"/></li>
+		<li><img src="http://uploads0.wikiart.org/images/alphonse-mucha/poetry.jpg"/></li>
+		<li><img src="http://37.media.tumblr.com/79e77c8ffd2af52fb6251e76f7e7a09d/tumblr_mt8behfWmv1rbuhr4o1_500.jpg"/></li>
+		<li><img src="http://www.feria-urbanism.eu/communities/3/004/012/354/713/images/4604165845.jpg"/></li>
+		<li><img src="http://uploads5.wikiart.org/images/alphonse-mucha/flower-1897.jpg"/></li>
+		<li><img src="http://uploads5.wikiart.org/images/alphonse-mucha/spring-1896.jpg"/></li>
+		<li><img src="http://www.luebilder.de/media/catalog/product/cache/1/image/c8f85e1c25c27561e43e5c68af54764c/b/o/bouquet_1.jpg"/></li>
+		<li><img src="http://37.media.tumblr.com/79e77c8ffd2af52fb6251e76f7e7a09d/tumblr_mt8behfWmv1rbuhr4o1_500.jpg"/></li>
+	   </ul>
+       </div>
+        <h5>Author Smith</h5>
+        <h5>Gordon Merchant founded Billabong in Burleigh Heads on the Gold Coast in 1973.</h5>
+       </li>
+     <li>
+       <div class="slideshow-block" id="slideshow-block_2">  <!----relative! --->
+       <ul class="slides" id="slides_2">
+		<li><img src="https://louviq.files.wordpress.com/2012/02/hokusai-kisoji-no-oku-amida-ga-taki-1832-1835-painting-artwork-print.jpg"/></li>
+		<li><img src="http://40.media.tumblr.com/tumblr_lpq0jpKN081qaz1ado1_1280.jpg"/></li>
+		<li><img src="http://photochika42.files.wordpress.com/2010/09/japanese-art.jpg"/></li>
+		<li><img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/Katsushika_Hokusai_-_Yoshitsune_Falls,_from_the_series_Famous_Waterfalls_in_Various_Provinces_-_Google_Art_Project.jpg"/></li>
+		<li><img src="http://veryasian.weebly.com/uploads/3/6/1/0/3610797/674270_orig.jpg"/></li>
+		<li><img src="http://data.ukiyo-e.org/jaodb/images/Asano_Takeji-Famous_Places_in_Nara-Distant_View_of_Daibutsu_Den-00037687-080627-F12.jpg"/></li>
+		<li><img src="http://cdn2.brooklynmuseum.org/images/opencollection/objects/size3/39.581_SL1.jpg"/></li>
+		<li><img src="http://www.mellowmonk.com/images/hokusai_bridge.jpg"/></li>
+		<li><img src="https://japon01.files.wordpress.com/2011/03/800px-the_big_wave_from_100_views_of_the_fuji_2nd_volume.jpg"/></li>
+	   </ul>
+       </div>
+        <h5>Author Smith</h5>
+        <h5>Gordon Merchant founded Billabong in Burleigh Heads on the Gold Coast in 1973.</h5>
+       </li>
+       
+     <li>
+       <div class="slideshow-block" id="slideshow-block_3">  <!----relative! --->
+       <ul class="slides" id="slides_3">
+		<li><img src="http://www.oceansbridge.com/paintings/museums/new-hermitage/Tschaggeny_Charles-ZZZ-Artist_at_Work.jpg"/></li>
+		<li><img src="http://www.victorianweb.org/painting/landseer/paintings/2.jpg"/></li>
+		<li><img src="http://www.intofineart.com/upload1/file-admin/images/new17/unknow%20artist-347555.jpg"/></li>
+		<li><img src="http://www.nccsc.net/sites/default/files/WEBSITE%20CURRAN%202%20copy.jpg"/></li>
+		<li><img src="http://anemalon.files.wordpress.com/2011/09/japonisme-edmundcharlestarbell1862e280931938cuttingorigami.jpg"/></li>
+		<li><img src="http://www.passionforpaintings.com/paintingdatabase/skin1/images/catalog/categories/oil%20paint/c/curran_charles/[curran_charles]courtney_woodland_solitude/big.jpg"/></li>
+		<li><img src="https://shepaintsred.files.wordpress.com/2013/05/horatio-henry-couldery.jpg"/></li>
+		<li><img src="http://news.stanford.edu/news/2009/february18/gifs/slaves.jpg"/></li>
+		<li><img src="http://www.intofineart.com/upload1/file-admin/images/new19/Artemisia%20gentileschi-477663.jpg"/></li>
+	   </ul>
+       </div>
+        <h5>Author Smith</h5>
+        <h5>Gordon Merchant founded Billabong in Burleigh Heads on the Gold Coast in 1973.</h5>
+       </li>
+       
+     <li class="end">
+       <div class="slideshow-block" id="slideshow-block_4">  <!----relative! --->
+       <ul class="slides" id="slides_4">
+		<li><img src="http://40.media.tumblr.com/tumblr_lpq0jpKN081qaz1ado1_1280.jpg"/></li>
+		<li><img src="http://photochika42.files.wordpress.com/2010/09/japanese-art.jpg"/></li>
+		<li><img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/Katsushika_Hokusai_-_Yoshitsune_Falls,_from_the_series_Famous_Waterfalls_in_Various_Provinces_-_Google_Art_Project.jpg"/></li>
+		<li><img src="http://veryasian.weebly.com/uploads/3/6/1/0/3610797/674270_orig.jpg"/></li>
+		<li><img src="http://data.ukiyo-e.org/jaodb/images/Asano_Takeji-Famous_Places_in_Nara-Distant_View_of_Daibutsu_Den-00037687-080627-F12.jpg"/></li>
+		<li><img src="http://cdn2.brooklynmuseum.org/images/opencollection/objects/size3/39.581_SL1.jpg"/></li>
+		<li><img src="http://www.mellowmonk.com/images/hokusai_bridge.jpg"/></li>
+		<li><img src="https://japon01.files.wordpress.com/2011/03/800px-the_big_wave_from_100_views_of_the_fuji_2nd_volume.jpg"/></li>
+	   </ul>
+       </div>
+        <h5>Author Smith</h5>
+        <h5>Gordon Merchant founded Billabong in Burleigh Heads on the Gold Coast in 1973.</h5>
+       </li>
+   </ul>
+</div>
+<div class="clear"></div>
+</div>
+
+</body>
+</html>
